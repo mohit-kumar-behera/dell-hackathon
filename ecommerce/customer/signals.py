@@ -17,7 +17,7 @@ def create_user_profile(sender, instance, created, **kwargs):
 
 """Update Profile when User is updated"""
 @receiver(post_save, sender=User)
-def update__user_profile(sender, instance, created, **kwargs):
+def update_user_profile(sender, instance, created, **kwargs):
     if not created and instance.customer:
         instance.customer.save()
 
