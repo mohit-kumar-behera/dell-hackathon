@@ -1,0 +1,56 @@
+{
+  "customer": [
+    {
+      "last_name": "Kumar",
+      "id": "297e3066-dec1-4e9c-9d09-54da95d47724",
+      "meta": {
+        "updated_at": "Sun Jan 23 01:36:20 2022",
+        "timestamp": 1642881980.261233
+      }
+    },
+    {
+      "city": "Jharkhand",
+      "state": "Odisha",
+      "id": "297e3066-dec1-4e9c-9d09-54da95d47724",
+      "meta": {
+        "updated_at": "Sun Jan 23 01:38:41 2022",
+        "timestamp": 1642882121.402645
+      }
+    },
+    {
+      "state": "Odisha",
+      "id": "63648925-0d04-4615-9522-5f42975522cd",
+      "meta": {
+        "updated_at": "Sun Jan 23 01:42:12 2022",
+        "timestamp": 1642882332.646298
+      }
+    }
+  ],
+  "product": [
+    {
+      "quantity": 223,
+      "id": "9f83b5c9-1404-4c3f-8166-015ff0820d83",
+      "meta": {
+        "updated_at": "Sun Jan 23 01:44:34 2022",
+        "timestamp": 1642882474.153308
+      }
+    },
+    {
+      "name": "HP Pavilion",
+      "quantity": 20,
+      "id": "f0d308cf-b222-4c20-944f-9c3885a082a1",
+      "meta": {
+        "updated_at": "Sun Jan 23 01:47:59 2022",
+        "timestamp": 1642882679.407256
+      }
+    },
+    {
+      "price": 67299.0,
+      "id": "f0d308cf-b222-4c20-944f-9c3885a082a1",
+      "meta": {
+        "updated_at": "Sun Jan 23 01:48:23 2022",
+        "timestamp": 1642882703.529243
+      }
+    }
+  ]
+}

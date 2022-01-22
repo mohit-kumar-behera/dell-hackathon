@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.db.models.signals import pre_save, post_save
+from django.dispatch import receiver
 
 import uuid
 
@@ -33,3 +35,29 @@ class Customer(models.Model):
   
   def get_fullname(self):
     return f'{self.first_name if self.first_name else ""} {self.last_name if self.last_name else ""}'
+
+
+
+# @receiver(pre_save, sender = Customer)
+# def handle_pre_save(sender, instance, *args, **kwargs):
+#   print("PRE SAVE", instance.city)
+
+
+# @receiver(post_save, sender = Customer)
+# def handle_post_save(sender, instance, created, *args, **kwargs):
+#   if created:
+#     pass
+#   else:
+#     print("Not Created POST SAVE", instance.city)
+
+
+"""
+1) Created a new Customer
+PRE SAVE mihir2@mail.com
+Create POST SAVE mihir2@mail.com
+
+2) Update existing customer
+PRE SAVE mihir2@mail.com
+Not Created POST SAVE mihir2@mail.com
+
+"""

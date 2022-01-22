@@ -11,9 +11,16 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Django environment variable
 import environ
+
+# TRACKER PACKAGE
+from audittracker.tracker import Tracker
+
+
+""" Setup for Django-Environ """
 env = environ.Env()
 environ.Env.read_env()
 
@@ -44,8 +51,8 @@ INSTALLED_APPS = [
 
     # Own App
     'accounts',
-    'customer.apps.CustomerConfig',
-    'product.apps.ProductConfig',
+    'customer',
+    'product',
     'ecommerce',
 
     # Third party App
@@ -145,3 +152,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+""" Setup for Tracker Package """
+STORE_AUDIT_IN_DIR = os.path.join(BASE_DIR, 'data_audit')
+AUDIT_TRACKER = Tracker(STORE_AUDIT_IN_DIR)

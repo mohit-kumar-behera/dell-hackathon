@@ -1,0 +1,36 @@
+{
+  "9f83b5c9-1404-4c3f-8166-015ff0820d83": [
+    {
+      "quantity": {
+        "from": 223,
+        "to": 278,
+        "at": "Sun Jan 23 01:44:34 2022",
+        "timestamp": 1642882474.153308
+      }
+    }
+  ],
+  "f0d308cf-b222-4c20-944f-9c3885a082a1": [
+    {
+      "name": {
+        "from": "HP Pavilion",
+        "to": "HP Pavilion Gaming",
+        "at": "Sun Jan 23 01:47:59 2022",
+        "timestamp": 1642882679.407256
+      },
+      "quantity": {
+        "from": 20,
+        "to": 12,
+        "at": "Sun Jan 23 01:47:59 2022",
+        "timestamp": 1642882679.407256
+      }
+    },
+    {
+      "price": {
+        "from": 67299.0,
+        "to": 63499.0,
+        "at": "Sun Jan 23 01:48:23 2022",
+        "timestamp": 1642882703.529243
+      }
+    }
+  ]
+}
